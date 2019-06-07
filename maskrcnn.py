@@ -123,10 +123,10 @@ dataset_val.load_melanoma(image_directory,"test")
 dataset_val.prepare()
 print("Training network heads")
 
-# model.train(dataset_train,dataset_val,
-#                 learning_rate=config.LEARNING_RATE,
-#                 epochs=30,
-#                 layers='heads')
+model.train(dataset_train,dataset_val,
+                learning_rate=config.LEARNING_RATE,
+                epochs=30,
+                layers='heads')
 model.train(dataset_train,dataset_val,
                 learning_rate=config.LEARNING_RATE,
                 epochs=30,
